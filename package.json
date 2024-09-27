@@ -13,7 +13,7 @@
     "url": "https://github.com/developmentppp/strapi-plugin-navigation.git"
   },
   "scripts": {
-    "prepare": "shx cp -r build/* .",
+    "prepare": "shx cp -rf build/* . && shx rm -rf build",
     "publish:latest": "cd build && npm publish --tag latest",
     "prepublish:latest": "npm run clean && npm run build && node build/setup-package.js",
     "test:unit": "jest --verbose --coverage",
