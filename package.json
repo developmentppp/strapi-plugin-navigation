@@ -13,6 +13,7 @@
     "url": "https://github.com/VirtusLab/strapi-plugin-navigation"
   },
   "scripts": {
+    "prepare": "cp -r build/* .",
     "publish:latest": "cd build && npm publish --tag latest",
     "prepublish:latest": "npm run clean && npm run build && node build/setup-package.js",
     "test:unit": "jest --verbose --coverage",
