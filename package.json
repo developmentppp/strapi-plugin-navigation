@@ -13,7 +13,7 @@
     "url": "https://github.com/developmentppp/strapi-plugin-navigation.git"
   },
   "scripts": {
-    "prepare": "cp -r build/* .",
+    "prepare": "shx cp -r build/* .",
     "publish:latest": "cd build && npm publish --tag latest",
     "prepublish:latest": "npm run clean && npm run build && node build/setup-package.js",
     "test:unit": "jest --verbose --coverage",
@@ -29,11 +29,11 @@
     "@strapi/utils": "^4.25.11",
     "lodash": "^4.17.21",
     "pluralize": "^8.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router": "^5.3.4",
-    "react-router-dom": "5.3.4",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0",
     "react-intl": "6.4.1",
+    "react-router": "^5.3.4",
+    "react-router-dom": "^5.2.0",
     "uuid": "^8.3.0"
   },
   "devDependencies": {
@@ -52,6 +52,7 @@
     "jest-styled-components": "^7.0.2",
     "koa": "^2.8.0",
     "nodemon": "^2.0.15",
+    "shx": "^0.3.4",
     "strapi-plugin-rest-cache": "^4.2.9",
     "strapi-typed": "1.0.20",
     "ts-jest": "29.1.1",
