@@ -1,8 +1,12 @@
-import styled from "styled-components";
-
-const Wrapper = styled.div`
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const styled_components_1 = __importDefault(require("styled-components"));
+const Wrapper = styled_components_1.default.div `
 position: relative;
-margin-top: ${({theme}) => theme.spaces[2]};
+margin-top: ${({ theme }) => theme.spaces[2]};
 margin-left: ${({ level }) => level && '54px'}};
 
 ${({ level, theme, isLast }) => level && `
@@ -35,5 +39,5 @@ ${({ level, theme, isLast }) => level && `
 	}
 `};
 `;
-
-export default Wrapper;
+exports.default = Wrapper;
+//# sourceMappingURL=Wrapper.js.map

@@ -1,17 +1,23 @@
-import pluginId from "../pluginId";
-import en from "./en.json";
-import fr from "./fr.json";
-import ca from "./ca.json";
-import de from "./de.json";
-
-const trads = {
-	en,
-	fr,
-	ca,
-	de
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-
-export const getTradId = (msg) => `${pluginId}.${msg}`;
-export const getTrad = (msg, defaultMessage) => ({id: getTradId(msg), defaultMessage: defaultMessage || getTradId(msg)});
-
-export default trads;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getTrad = exports.getTradId = void 0;
+const pluginId_1 = __importDefault(require("../pluginId"));
+const en_json_1 = __importDefault(require("./en.json"));
+const fr_json_1 = __importDefault(require("./fr.json"));
+const ca_json_1 = __importDefault(require("./ca.json"));
+const de_json_1 = __importDefault(require("./de.json"));
+const trads = {
+    en: en_json_1.default,
+    fr: fr_json_1.default,
+    ca: ca_json_1.default,
+    de: de_json_1.default
+};
+const getTradId = (msg) => `${pluginId_1.default}.${msg}`;
+exports.getTradId = getTradId;
+const getTrad = (msg, defaultMessage) => ({ id: (0, exports.getTradId)(msg), defaultMessage: defaultMessage || (0, exports.getTradId)(msg) });
+exports.getTrad = getTrad;
+exports.default = trads;
+//# sourceMappingURL=index.js.map

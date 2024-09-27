@@ -1,5 +1,7 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function init(initialState) {
-  return initialState;
+    return initialState;
 }
-
-export default init;
+exports.default = init;
+//# sourceMappingURL=init.js.map

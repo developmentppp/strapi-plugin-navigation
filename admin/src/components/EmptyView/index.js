@@ -1,8 +1,12 @@
-import styled from "styled-components";
-import { Box } from '@strapi/design-system/Box';
-import { Button } from "@strapi/design-system/Button";
-
-const EmptyView = styled.div`
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const styled_components_1 = __importDefault(require("styled-components"));
+const Box_1 = require("@strapi/design-system/Box");
+const Button_1 = require("@strapi/design-system/Button");
+const EmptyView = styled_components_1.default.div `
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -22,5 +26,5 @@ const EmptyView = styled.div`
 		margin: 1rem;
 	}
 `;
-
-export default EmptyView;
+exports.default = EmptyView;
+//# sourceMappingURL=index.js.map
