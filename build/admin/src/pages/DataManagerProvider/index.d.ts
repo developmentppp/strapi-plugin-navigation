@@ -7,6 +7,5 @@ declare const _default: React.MemoExoticComponent<{
     };
 }>;
 export default _default;
-import PropTypes from "prop-types";
 import React from "react";
 //# sourceMappingURL=index.d.ts.map

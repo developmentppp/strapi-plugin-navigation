@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { useIntl } from "react-intl";
 import { Effect } from "../../../../../../../types";
 import { Navigation } from "../types";

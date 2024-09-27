@@ -8,10 +8,12 @@ const pluginId_1 = __importDefault(require("../pluginId"));
 const en_json_1 = __importDefault(require("./en.json"));
 const fr_json_1 = __importDefault(require("./fr.json"));
 const ca_json_1 = __importDefault(require("./ca.json"));
+const de_json_1 = __importDefault(require("./de.json"));
 const trads = {
     en: en_json_1.default,
     fr: fr_json_1.default,
     ca: ca_json_1.default,
+    de: de_json_1.default
 };
 const getTradId = (msg) => `${pluginId_1.default}.${msg}`;
 exports.getTradId = getTradId;

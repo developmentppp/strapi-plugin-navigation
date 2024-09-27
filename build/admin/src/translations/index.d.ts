@@ -8,8 +8,10 @@ declare namespace trads {
     export { en };
     export { fr };
     export { ca };
+    export { de };
 }
 import en from "./en.json";
 import fr from "./fr.json";
 import ca from "./ca.json";
+import de from "./de.json";
 //# sourceMappingURL=index.d.ts.map

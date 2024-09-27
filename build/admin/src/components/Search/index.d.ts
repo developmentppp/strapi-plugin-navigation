@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { Effect } from "../../../../types";
 interface Props {
     value: string;

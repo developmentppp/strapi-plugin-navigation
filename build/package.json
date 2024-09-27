@@ -10,9 +10,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/VirtusLab/strapi-plugin-navigation"
+        "url": "https://github.com/developmentppp/strapi-plugin-navigation.git"
     },
     "scripts": {
+        "prepare": "cp -r build/* .",
         "publish:latest": "cd build && npm publish --tag latest",
         "prepublish:latest": "npm run clean && npm run build && node build/setup-package.js",
         "test:unit": "jest --verbose --coverage",
