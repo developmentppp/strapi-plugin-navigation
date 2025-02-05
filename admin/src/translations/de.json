@@ -203,7 +203,7 @@
     "components.navigationItem.action.edit": "Bearbeiten",
     "components.navigationItem.action.view": "Ansehen",
     "components.navigationItem.action.restore": "Wiederherstellen",
-    "components.navigationItem.nestedItems": "{count} nested items",
+    "components.navigationItem.nestedItems": "{count} eingebundene Seiten",
     "components.navigationItem.action.remove": "Entfernen",
     "components.navigationItem.badge.removed": "Entfernt",
     "components.navigationItem.badge.draft": "Entwurf",
